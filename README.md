@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Proyecto Primera página
 
 ```sh
 npm create astro@latest -- --template basics
