@@ -1,0 +1,25 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+   title: string
+   price: number
+   img: string
+}
+
+const { title, price, img } = Astro.props
+---
+
+<div>
+    <img src={img} alt="">
+    <div>
+        <p>{title}</p>
+        <Icon name={'like'} />
+    </div>
+    <div>
+        <p>$ {price}</p> 
+        <p>Envío Gratis</p>
+    </div>
+</div>
+
+
