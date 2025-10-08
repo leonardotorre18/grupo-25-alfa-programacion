@@ -3,5 +3,93 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    Esta es la vista index
+    <section class="contacto">
+        <h1>Contacto</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </Layout>
+<style>
+.contacto {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contacto h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contacto label {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.7rem;
+    background: rgba(255,255,255,0.08);
+    font-size: 1rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    outline: none;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+    background: rgba(255,255,255,0.15);
+    box-shadow: 0 0 0 2px #ff512f55;
+}
+
+.contacto textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contacto button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.9rem 0;
+    background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(221,36,118,0.15);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.contacto button[type="submit"]:hover {
+    background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+</style>

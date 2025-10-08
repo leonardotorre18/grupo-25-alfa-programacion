@@ -4,5 +4,87 @@ import Layout from "../layouts/Layout.astro"
 
 
 <Layout>
-    algo de nosotros
+    <section class="about-us">
+        <h1>Sobre Nosotros</h1>
+        <p>
+            Somos un grupo apasionado por la programación y el desarrollo de software. Nuestro objetivo es aprender, colaborar y crear soluciones innovadoras que aporten valor a la comunidad.
+        </p>
+        <h2>Nuestra Misión</h2>
+        <p>
+            Fomentar el aprendizaje y el trabajo en equipo, desarrollando proyectos que nos permitan crecer profesionalmente y contribuir al mundo tecnológico.
+        </p>
+        <h2>Nuestro Equipo</h2>
+        <ul>
+            <li>Integrante 1</li>
+            <li>Integrante 2</li>
+            <li>Integrante 3</li>
+            <li>Integrante 4</li>
+        </ul>
+        <h2>Contacto</h2>
+        <p>
+            ¿Quieres saber más? Escríbenos a <a href="mailto:contacto@grupo25.com">contacto@grupo25.com</a>
+        </p>
+    </section>
 </Layout>
+<style>
+.about-us {
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #22223b;
+}
+
+.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #3f37c9;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    color: #4361ee;
+    font-weight: 700;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.about-us li {
+    background: #bde0fe;
+    color: #22223b;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.7rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.about-us li:hover {
+    background: #a2d2ff;
+}
+
+.about-us a {
+    color: #3a86ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.about-us a:hover {
+    color: #4361ee;
+    text-decoration: underline;
+}
+</style>

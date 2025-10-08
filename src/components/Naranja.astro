@@ -12,14 +12,37 @@ const { title, price, img } = Astro.props
 
 <div>
     <img src={img} alt="">
-    <div>
-        <p>{title}</p>
+    
+    <div class="nuno-mendes">
+        <p class="lamine-yamal">{title}</p>
         <Icon name={'like'} />
     </div>
-    <div>
+    <div class="nuno-mendes">
         <p>$ {price}</p> 
         <p>Envío Gratis</p>
     </div>
 </div>
 
+<style>
 
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: all .3s ease;
+    }
+    img:hover {
+        opacity: .5;
+    }
+
+    .lamine-yamal {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .nuno-mendes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>

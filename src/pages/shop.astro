@@ -4,11 +4,32 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-    <Naranja title="Tacos" price={1} img="/OIP.webp" />
-    <Naranja title="Mondongo" price={3} img="/americas-got-talent-terry-crews.jpg" />
-    <Naranja title="Pepitos" price={2.5} img="/americas-got-talent-terry-crews.jpg" />
-    <Naranja title="Sushi" price={11} img="/OIP.webp" />
-    <Naranja title="Manjar del pollo" price={19} img="/OIP.webp" />
-    <Naranja title="La que Ronca" price={8} img="/americas-got-talent-terry-crews.jpg" />
-    <Naranja title="KFC" price={7} img="/OIP.webp" />
+    <div class="shop">
+        <h1>Tienda de Terry's</h1>
+        <div class="container">
+            <Naranja title="Tacos" price={1} img="/OIP.webp" />
+            <Naranja title="Mondongo" price={3} img="/americas-got-talent-terry-crews.jpg" />
+            <Naranja title="Pepitos" price={2.5} img="/americas-got-talent-terry-crews.jpg" />
+            <Naranja title="Sushi" price={11} img="/OIP.webp" />
+            <Naranja title="Manjar del pollo" price={19} img="/OIP.webp" />
+            <Naranja title="La que Ronca" price={8} img="/americas-got-talent-terry-crews.jpg" />
+            <Naranja title="KFC" price={7} img="/OIP.webp" />
+        </div>
+    </div>
 </Layout>
+
+
+<style>
+    .shop {
+
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .container {
+        display: grid;
+        gap: 22px;
+        padding: 20px 60px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+</style>
